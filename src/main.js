@@ -9,7 +9,7 @@ import './styles/element-variables.scss'
 import './styles/index.scss'
 
 
-import {} from '../mock'
+import { mockXHR } from '../mock'
 
 Vue.use(Element);
 
