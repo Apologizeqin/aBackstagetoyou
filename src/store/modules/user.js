@@ -29,7 +29,7 @@ const mutations = {
 }
 
 const actions = {
-  // user login
+  // user login 用户的登录接口在这里更新 （而且是先一步再执行的同步，这里的token在cookies里面存了一次，又在vuex里面存了一次，为什么？）
   login({ commit }, userInfo) {
     const { username, password } = userInfo
     return new Promise((resolve, reject) => {

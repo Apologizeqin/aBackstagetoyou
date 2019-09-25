@@ -3,7 +3,7 @@
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" autocomplete="on" label-position="left">
 
       <div class="title-container">
-        <h3 class="title">登 录</h3>
+        <h3 class="title">Login Form</h3>
       </div>
 
       <el-form-item prop="username">
@@ -49,12 +49,12 @@
 
       <div style="position:relative">
         <div class="tips">
-          <span>最高权限用户 : admin</span>
-          <span>密 码 : 任意值</span>
+          <span>Username : admin</span>
+          <span>Password : any</span>
         </div>
         <div class="tips">
-          <span style="margin-right:18px;">仅可编辑用户 : editor</span>
-          <span>密码 : any</span>
+          <span style="margin-right:18px;">Username : editor</span>
+          <span>Password : any</span>
         </div>
 
         <el-button class="thirdparty-button" type="primary" @click="showDialog=true">
@@ -97,8 +97,8 @@ export default {
     }
     return {
       loginForm: {
-        username: '',
-        password: ''
+        username: 'admin',
+        password: '111111'
       },
       loginRules: {
         username: [{ required: true, trigger: 'blur', validator: validateUsername }],
